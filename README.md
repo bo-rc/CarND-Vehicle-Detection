@@ -31,7 +31,7 @@ There involved a lot of trial-and-error experiments, finally I chose the followi
 * hog_channel='ALL': use all 3 channels of the image.
 * spatial_feat=False: spatial binning of colors are not used for feature determination.
 
-This parameter-tuning process is iterated during the entire pipeline. The criteria is the result of using the pipeline to detect vehicles on a test image. The finla parameters are described in [parameters.py](parameters.py).
+This parameter-tuning process is iterated during the entire pipeline. The criteria is the result of using the pipeline to detect vehicles on a test image. The final parameters are described in [parameters.py](parameters.py).
 
 ## Example HOG features:
 
@@ -45,7 +45,7 @@ Udacity project data set was used.
 ![example data](output_images/example_data.png)
 
  
-Features were extracted using function [`extract_features_from_img_list`](https://github.com/bo-rc/CarND-Vehicle-Detection/blob/master/util.py#L154) and normalized using function [`get_features_norm`](https://github.com/bo-rc/CarND-Vehicle-Detection/blob/master/util.py#L205) before saving to pickle files in [feat_extraction.py](feat_extract_for_training.py).
+Features were extracted using function [`extract_features_from_img_list`](https://github.com/bo-rc/CarND-Vehicle-Detection/blob/master/util.py#L281) and normalized using function [`get_features_norm`](https://github.com/bo-rc/CarND-Vehicle-Detection/blob/master/helpers.py#L176) before saving to pickle files in [feat_extraction.py](feat_extract_for_training.py).
 
 ## an example of the normalized feature vector:
 ![normalized features](output_images/feature_normalized.png)
